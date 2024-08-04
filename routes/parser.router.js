@@ -1,8 +1,8 @@
 import express from "express";
-import { parserHandler } from "../controllers/parser.controller";
+import { parserHandler } from "../controllers/parser.controller.js";
 
 const router = express.Router();
 
-router.route("").get(parserHandler);
+router.route("/whoami").get(parserHandler);
 
 export default router;
